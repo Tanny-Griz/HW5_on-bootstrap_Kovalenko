@@ -1,0 +1,211 @@
+$white: #fff;
+$btn-green: #1bbc9b;
+$gray: #444;
+$font-lato: 'Lato', sans-serif;
+$btn-dark-green: #16a086;
+
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?czo0fi');
+    src: url('../fonts/icomoon.eot?czo0fi#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?czo0fi') format('truetype'),
+        url('../fonts/icomoon.woff?czo0fi') format('woff'),
+        url('../fonts/icomoon.svg?czo0fi#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.holder-header {
+    padding: 1.437rem 0;
+}
+
+.header-nav {
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 0.312rem;
+    }
+    a {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 0.875rem;
+        padding: 0.812rem 0.75rem;
+        color: $gray;
+        font-family: $font-lato;
+        font-weight: 300;
+        text-transform: uppercase;
+        transition: color 0.7s;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $btn-green;
+            color: $white;
+        }
+    }
+}
+
+.build-brand {
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.holder-build-brand {
+    padding: 3rem 0;
+    h1 {
+        font-weight: 300;
+        color: $white;
+        font-size: 3.437rem;
+        strong {
+            font-weight: 700;
+        }
+    }
+    .text {
+        font-weight: 300;
+        font-size: 1rem;
+        color: $white;
+        line-height: 1.5;
+        padding: 1rem 0;
+    }
+}
+
+.icon-down:before {
+    content: "\e900";
+    color: $white;
+    font-size: 2.81rem;
+    transition: .4s
+}
+
+.btn-success {
+    background-color: $btn-green;
+    border: none;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
+    font-size: 0.812rem;
+    letter-spacing: 0.125rem;
+    text-decoration: none;
+    padding: 0.687rem 0.375rem;
+    font-weight: 700;
+    font-family: $font-lato;
+    border-radius: 0%;
+    &:hover {
+        background-color: $btn-dark-green;
+    }
+}
+
+.arrow {
+    a {
+        text-decoration: none;
+    }
+}
+
+.holder-portfolio {
+    padding: 1.875rem 0;
+}
+
+.header-text {
+    color: $gray;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.737rem;
+}
+
+.button-design {
+    li {
+        list-style: none;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 0.437rem;
+        margin-bottom: 0.312rem;
+    }
+    
+}
+
+.design {
+    padding: 2.5rem 0;
+}
+
+.circle {
+    padding: 0 10px 15px;
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.img-link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 11.25rem;
+    height: 11.25rem;
+    overflow: hidden;
+}
+
+.hover-text {
+    position: absolute;
+    text-align: center;
+    border-radius: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity .3s,
+                visibility .3s;
+    opacity: 0;
+    i {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        background-color: #444;
+        border-radius: 100%;
+        padding: 0.7rem;
+        opacity: .61;
+    }
+    p {
+        font-size: 1.1rem;
+        white-space: nowrap;
+        &:nth-child(2) {
+            font-size: 1rem;
+            white-space: nowrap;
+        }
+    }
+    
+}
+
+.icon-search:before {
+    content: "\e901";
+}
+
+.img-link:hover .hover-text {
+    opacity: 1;
+    background: rgba(22, 162, 136, .75);
+}
